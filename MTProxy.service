@@ -3,7 +3,8 @@ Description=MTProxy
 After=network.target
 
 [Service]
-Type=simpleExecStart=/usr/bin/python3 /root/mtprotoproxy-master/mtprotoproxy.py
+Type=simple
+ExecStart=/usr/bin/python3 /root/mtprotoproxy-master/mtprotoproxy.py
 Restart=always
 RuntimeMaxSec=25
 
