@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 ExecStart=/usr/bin/python3 /root/MTP/mtprotoproxy.py
 Restart=always
-RuntimeMaxSec=25
+RuntimeMaxSec=60
 
 [Install]
 WantedBy=multi-user.target
