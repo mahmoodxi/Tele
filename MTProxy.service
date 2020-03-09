@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /root/mtprotoproxy-master/mtprotoproxy.py
+ExecStart=/usr/bin/python3 /root/MTP/mtprotoproxy.py
 Restart=always
 RuntimeMaxSec=25
 
