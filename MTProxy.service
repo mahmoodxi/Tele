@@ -4,8 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /root/MTP/mtprotoproxy.py
-restart=on-failure
+WorkingDirectory=/root/MTProxy/objs/bin
+ExecStart=/root/MTProxy/objs/bin/mtproto-proxy -u nobody -p 8888 -H 443 -S <secret> -P <proxy tag> <other params>
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
